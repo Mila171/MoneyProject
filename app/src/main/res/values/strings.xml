@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Money</string>
+    <string name="profile_text_1">Имя Фамилия</string>
+    <string name="profile_text_2">1234 5678 8765 4321</string>
+    <string name="profile_text_3">Идентификация</string>
+    <string name="profile_text_4">Заявки на идентификацию</string>
+    <string name="profile_text_5">Мои данные</string>
+    <string name="profile_text_6">Лимиты</string>
+    <string name="profile_text_7">Настройки</string>
+    <string name="profile_text_9">Безопасность</string>
+    <string name="profile_text_10">Помощь</string>
+    <string name="profile_text_11">Выйти из приложения</string>
+
+    <string name="under1">кошелёк</string>
+    <string name="under2">каталог</string>
+    <string name="under3">история</string>
+    <string name="under4">карты</string>
+
+    <string name="cards_text_1">Карты</string>
+    <string name="cards_text_2">Мои карты</string>
+    <string name="cards_text_3">Карты других банков</string>
+    <string name="cards_text_4">Активировать карту Money</string>
+    <string name="cards_text_5">Заказ карты Money</string>
+    <string name="cards_text_6">Виртуальная</string>
+    <string name="cards_text_7">199₽</string>
+    <string name="cards_text_8">в 1 год</string>
+    <string name="cards_text_9">Подходит для покупок и снятия наличных. Бесплатна для “Основного” статуса кошелька.</string>
+    <string name="cards_text_10">Привязать карту</string>
+
+    <string name="history_text_1">История</string>
+    <string name="history_text_2">Оплатить</string>
+    <string name="history_text_3">Перевести</string>
+    <string name="history_text_8">Сервисы</string>
+    <string name="history_text_4">26 октября 2020</string>
+    <string name="history_text_5">Money</string>
+    <string name="history_text_6">+996507171203</string>
+    <string name="history_text_7">+300₽</string>
+
+    <string name="catalog_text_1">Каталог</string>
+    <string name="catalog_text_2">Мобильный</string>
+    <string name="catalog_text_3">QR-оплата</string>
+    <string name="catalog_text_4">Интернет и ТВ</string>
+    <string name="catalog_text_5">Погашение кредитов</string>
+    <string name="catalog_text_6">Развлечения</string>
+    <string name="catalog_text_7">ЖКХ</string>
+
+    <string name="money1">баланс</string>
+    <string name="money2">100.12₽</string>
+    <string name="money3">Пополнить кошелек</string>
+    <string name="money4">Платежи и переводы</string>
+    <string name="money5">на Money</string>
+    <string name="money6">по никнейму</string>
+    <string name="money7">переводы
+        на карту</string>
+    <string name="money8">мобильная
+связь</string>
+    <string name="money9">Полезное</string>
+    <string name="money10">Квитанции по QR-коду</string>
+    <string name="money11">Счета к оплате</string>
+    <string name="money12">Карта терминалов</string>
+</resources>
