@@ -5,14 +5,12 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <SearchView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
 
     <LinearLayout
         android:id="@+id/linearLayout7"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/c1"
@@ -24,19 +22,15 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:gravity="center">
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:layout_marginHorizontal="15dp"
-                    android:hint="Поиск"
-                    android:textColor="@color/black"
-                    android:textSize="17.5sp" />
-            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginHorizontal="15dp"
+                android:hint="Поиск"
+                android:textColor="@color/black"
+                android:textSize="17.5sp"
+                android:autofillHints=""
+                tools:ignore="TextFields" />
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 
@@ -74,7 +68,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/profile_text_1" />
+                    android:text="@string/profile_text_1"
+                    android:layout_marginHorizontal="20dp"/>
             </LinearLayout>
 
             <TextView
@@ -89,7 +84,8 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/money3" />
+                android:text="@string/money3"
+                android:textColor="@color/white" />
         </LinearLayout>
     </LinearLayout>
 
@@ -107,7 +103,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout16"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
@@ -126,7 +122,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/ellipse_14" />
+                app:srcCompat="@drawable/ellipse_14"
+                tools:ignore="VectorDrawableCompat" />
 
             <TextView
                 style="@style/text3"
@@ -147,7 +144,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/ellipse_14" />
+                app:srcCompat="@drawable/ellipse_14"
+                tools:ignore="VectorDrawableCompat" />
 
             <TextView
                 style="@style/text3"
@@ -168,7 +166,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/ellipse_14" />
+                app:srcCompat="@drawable/ellipse_14"
+                tools:ignore="VectorDrawableCompat" />
 
             <TextView
                 style="@style/text3"
@@ -189,7 +188,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/ellipse_14" />
+                app:srcCompat="@drawable/ellipse_14"
+                tools:ignore="VectorDrawableCompat" />
 
             <TextView
                 style="@style/text3"
@@ -229,7 +229,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/ellipse_14" />
+                    app:srcCompat="@drawable/ellipse_14"
+                    tools:ignore="VectorDrawableCompat" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -246,7 +247,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/ellipse_14" />
+                    app:srcCompat="@drawable/ellipse_14"
+                    tools:ignore="VectorDrawableCompat" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -258,106 +260,103 @@
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout13"
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
-        android:layout_height="2sp"
-        android:layout_marginBottom="15dp"
-        android:background="@color/grey"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-    <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="650dp"
-        android:orientation="horizontal"
+        android:layout_height="90dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:layout_gravity="center">
 
-            <ImageView
-                android:layout_width="30sp"
-                android:layout_height="30sp"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="30sp"
-                app:srcCompat="@drawable/premium_icon_wallet_2211048" />
-
-            <TextView
-                style="@style/text3"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/under1" />
-        </LinearLayout>
+                android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="30sp"
+                    app:srcCompat="@drawable/premium_icon_wallet_2211048" />
 
-            <ImageView
-                android:layout_width="30sp"
-                android:layout_height="30sp"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="30sp"
-                app:srcCompat="@drawable/free_icon_copy_3914097" />
+                <TextView
+                    style="@style/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/under1" />
+            </LinearLayout>
 
-            <TextView
-                style="@style/text3"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/under2" />
-        </LinearLayout>
+                android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="30sp"
+                    app:srcCompat="@drawable/free_icon_copy_3914097" />
 
-            <ImageView
-                android:layout_width="30sp"
-                android:layout_height="30sp"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="30sp"
-                app:srcCompat="@drawable/history" />
+                <TextView
+                    style="@style/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/under2" />
+            </LinearLayout>
 
-            <TextView
-                style="@style/text3"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/under3" />
-        </LinearLayout>
+                android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="30sp"
+                    app:srcCompat="@drawable/history" />
 
-            <ImageView
-                android:layout_width="30sp"
-                android:layout_height="30sp"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="30sp"
-                app:srcCompat="@drawable/credit_card" />
+                <TextView
+                    style="@style/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/under3" />
+            </LinearLayout>
 
-            <TextView
-                style="@style/text3"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/under4" />
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="30sp"
+                    app:srcCompat="@drawable/credit_card" />
+
+                <TextView
+                    style="@style/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/under4" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
