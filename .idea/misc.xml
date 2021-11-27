@@ -3,14 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/activity_cards.xml" value="0.19114583333333332" />
+        <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/activity_card_second.xml" value="0.35260416666666666" />
+        <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/activity_cards.xml" value="0.33" />
         <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/activity_catalog.xml" value="0.20520833333333333" />
-        <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/activity_history.xml" value="0.20520833333333333" />
+        <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/activity_history.xml" value="0.33" />
         <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/activity_money.xml" value="0.20520833333333333" />
-        <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/cards.xml" value="0.20520833333333333" />
-        <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/cards2.xml" value="0.20520833333333333" />
-        <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/catalog.xml" value="0.20520833333333333" />
+        <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/activity_money.xml" value="0.25" />
+        <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/cards.xml" value="0.33" />
+        <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/cards2.xml" value="0.25" />
+        <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/catalog.xml" value="0.33" />
         <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/history.xml" value="0.20520833333333333" />
         <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/layout.xml" value="0.20520833333333333" />
         <entry key="..\:/Kamila/Moneymorethandick/app/src/main/res/layout/main.xml" value="0.20520833333333333" />
