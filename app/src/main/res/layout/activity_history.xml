@@ -48,18 +48,13 @@
             android:text="@string/history_text_8" />
     </LinearLayout>
 
-    <LinearLayout
+    <View
         android:id="@+id/line5"
         android:layout_width="match_parent"
-        android:layout_height="2sp"
-        android:layout_marginTop="20dp"
-        android:background="@color/grey"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        tools:ignore="DuplicateIds,SmallSp" />
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/light_grey"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
     <LinearLayout
         android:id="@+id/linearLayout10"
@@ -122,13 +117,10 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/linearLayout8"
+        <View
             android:layout_width="match_parent"
-            android:layout_height="2sp"
-            android:background="@color/grey"
-            android:orientation="horizontal"
-            tools:ignore="SmallSp" />
+            android:layout_height="1dp"
+            android:background="@color/light_grey" />
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

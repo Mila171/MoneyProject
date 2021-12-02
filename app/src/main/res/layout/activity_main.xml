@@ -21,7 +21,6 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="24dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout14"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -54,16 +53,12 @@
                 tools:ignore="VectorDrawableCompat" />
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/linearLayout14"
+        <View
             android:layout_width="match_parent"
-            android:layout_height="2sp"
-            android:background="@color/grey"
+            android:layout_height="1dp"
+            android:background="@color/light_grey"
             app:layout_constraintBottom_toTopOf="@+id/textView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-            android:orientation="horizontal" />
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
         <TextView
             android:id="@+id/textView"
