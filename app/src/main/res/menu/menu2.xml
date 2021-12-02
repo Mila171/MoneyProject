@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/under1"
+        android:icon="@drawable/premium_icon_wallet_2211048"
+        android:enabled="true"
+        android:title="@string/under1" />
+    <item
+        android:id="@+id/under2"
+        android:icon="@drawable/free_icon_copy_3914097"
+        android:enabled="true"
+        android:title="@string/under2" />
+    <item
+        android:id="@+id/under3"
+        android:icon="@drawable/history"
+        android:enabled="true"
+        android:title="@string/under3" />
+    <item
+        android:id="@+id/under4"
+        android:icon="@drawable/credit_card"
+        android:enabled="true"
+        android:title="@string/under4" />
+</menu>

@@ -39,7 +39,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="140sp"
-            android:text="@string/cards_text_3" />
+            android:text="@string/cards_text_3"
+            android:layout_marginStart="140sp" />
 
 
     </LinearLayout>
@@ -52,7 +53,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
         app:srcCompat="@drawable/line_18"
-        android:layout_marginVertical="20dp" />
+        android:layout_marginVertical="20dp"
+        android:contentDescription="@string/todo1" />
 
     <LinearLayout
         android:id="@+id/linearLayout4"
@@ -67,12 +69,14 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/line1">
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="30sp"
             android:layout_height="30sp"
-            app:srcCompat="@drawable/credit_card" />
+            app:srcCompat="@drawable/credit_card"
+            android:contentDescription="@string/todo2" />
 
         <TextView
             style="@style/text3"
@@ -80,7 +84,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="30sp"
-            android:text="@string/cards_text_4" />
+            android:text="@string/cards_text_4"
+            android:layout_marginStart="30sp" />
     </LinearLayout>
 
     <TextView
@@ -159,7 +164,8 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/m"
             android:layout_margin="20sp"
-            tools:ignore="VectorDrawableCompat" />
+            tools:ignore="VectorDrawableCompat"
+            android:contentDescription="@string/todo3" />
     </LinearLayout>
 
     <LinearLayout
@@ -170,99 +176,19 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        tools:ignore="SmallSp" />
+
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
-        app:layout_constraintBottom_toBottomOf="parent">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="30sp"
-                    app:srcCompat="@drawable/premium_icon_wallet_2211048" />
-
-                <TextView
-                    style="@style/text3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/under1" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="30sp"
-                    app:srcCompat="@drawable/free_icon_copy_3914097" />
-
-                <TextView
-                    style="@style/text3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/under2" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="30sp"
-                    app:srcCompat="@drawable/history" />
-
-                <TextView
-                    style="@style/text3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/under3" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="30sp"
-                    app:srcCompat="@drawable/credit_card" />
-
-                <TextView
-                    style="@style/text3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/under4" />
-            </LinearLayout>
-        </LinearLayout>
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

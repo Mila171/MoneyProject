@@ -89,7 +89,8 @@
                     android:layout_gravity="center"
                     android:layout_margin="10sp"
                     app:srcCompat="@drawable/mobile"
-                    tools:ignore="VectorDrawableCompat" />
+                    tools:ignore="VectorDrawableCompat"
+                    android:contentDescription="@string/todo" />
 
                 <TextView
                     style="@style/text2"
@@ -104,7 +105,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="2sp"
                 android:background="@color/light_grey"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
+                tools:ignore="SmallSp" />
         </LinearLayout>
 
         <LinearLayout
@@ -120,7 +122,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-                tools:layout_editor_absoluteX="30dp">
+                tools:layout_editor_absoluteX="30dp"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="30sp"
@@ -128,7 +131,8 @@
                     android:layout_gravity="center"
                     android:layout_margin="10sp"
                     app:srcCompat="@drawable/qr_code"
-                    tools:ignore="VectorDrawableCompat" />
+                    tools:ignore="VectorDrawableCompat"
+                    android:contentDescription="@string/todo" />
 
                 <TextView
                     style="@style/text2"
@@ -145,7 +149,8 @@
                 android:layout_height="2sp"
                 android:background="@color/light_grey"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
-                android:orientation="horizontal" />
+                android:orientation="horizontal"
+                tools:ignore="SmallSp" />
         </LinearLayout>
 
         <LinearLayout
@@ -161,7 +166,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-                tools:layout_editor_absoluteX="30dp">
+                tools:layout_editor_absoluteX="30dp"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="30sp"
@@ -169,7 +175,8 @@
                     android:layout_gravity="center"
                     android:layout_margin="10sp"
                     app:srcCompat="@drawable/cast"
-                    tools:ignore="VectorDrawableCompat" />
+                    tools:ignore="VectorDrawableCompat"
+                    android:contentDescription="@string/todo" />
 
                 <TextView
                     style="@style/text2"
@@ -184,7 +191,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="2sp"
                 android:background="@color/light_grey"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
+                tools:ignore="SmallSp" />
         </LinearLayout>
 
         <LinearLayout
@@ -200,7 +208,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-                tools:layout_editor_absoluteX="30dp">
+                tools:layout_editor_absoluteX="30dp"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="30sp"
@@ -208,7 +217,8 @@
                     android:layout_gravity="center"
                     android:layout_margin="10sp"
                     app:srcCompat="@drawable/color"
-                    tools:ignore="VectorDrawableCompat" />
+                    tools:ignore="VectorDrawableCompat"
+                    android:contentDescription="@string/todo" />
 
                 <TextView
                     style="@style/text2"
@@ -223,7 +233,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="2sp"
                 android:background="@color/light_grey"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
+                tools:ignore="SmallSp" />
         </LinearLayout>
 
         <LinearLayout
@@ -240,7 +251,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-                tools:layout_editor_absoluteX="30dp">
+                tools:layout_editor_absoluteX="30dp"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="30sp"
@@ -248,7 +260,8 @@
                     android:layout_gravity="center"
                     android:layout_margin="10sp"
                     app:srcCompat="@drawable/cookie"
-                    tools:ignore="VectorDrawableCompat" />
+                    tools:ignore="VectorDrawableCompat"
+                    android:contentDescription="@string/todo" />
 
                 <TextView
                     style="@style/text2"
@@ -263,7 +276,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="2sp"
                 android:background="@color/light_grey"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
+                tools:ignore="SmallSp" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/linearLayout10"
@@ -280,7 +294,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-                tools:layout_editor_absoluteX="30dp">
+                tools:layout_editor_absoluteX="30dp"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="30sp"
@@ -288,7 +303,8 @@
                     android:layout_gravity="center"
                     android:layout_margin="10sp"
                     app:srcCompat="@drawable/home_alt_outline"
-                    tools:ignore="VectorDrawableCompat" />
+                    tools:ignore="VectorDrawableCompat"
+                    android:contentDescription="@string/todo" />
                 <TextView
                     style="@style/text2"
                     android:layout_width="wrap_content"
@@ -301,7 +317,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="2sp"
                 android:background="@color/light_grey"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
+                tools:ignore="SmallSp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -317,14 +334,16 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="30sp"
-                    app:srcCompat="@drawable/premium_icon_wallet_2211048" />
+                    app:srcCompat="@drawable/premium_icon_wallet_2211048"
+                    android:contentDescription="@string/todo" />
 
                 <TextView
                     style="@style/text3"
@@ -337,14 +356,16 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="30sp"
-                    app:srcCompat="@drawable/free_icon_copy_3914097" />
+                    app:srcCompat="@drawable/free_icon_copy_3914097"
+                    android:contentDescription="@string/todo" />
 
                 <TextView
                     style="@style/text3"
@@ -357,14 +378,16 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="30sp"
-                    app:srcCompat="@drawable/history" />
+                    app:srcCompat="@drawable/history"
+                    android:contentDescription="@string/todo" />
 
                 <TextView
                     style="@style/text3"
@@ -377,14 +400,16 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="30sp"
-                    app:srcCompat="@drawable/credit_card" />
+                    app:srcCompat="@drawable/credit_card"
+                    android:contentDescription="@string/todo" />
 
                 <TextView
                     style="@style/text3"
