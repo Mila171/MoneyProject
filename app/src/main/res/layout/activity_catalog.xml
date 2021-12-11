@@ -125,7 +125,8 @@
                     android:layout_gravity="center"
                     android:layout_margin="10sp"
                     app:srcCompat="@drawable/qr_code"
-                    android:contentDescription="@string/todo8" />
+                    android:contentDescription="@string/todo8"
+                    tools:ignore="VectorDrawableCompat" />
 
                 <TextView
                     style="@style/text2"
@@ -164,7 +165,8 @@
                     android:layout_gravity="center"
                     android:layout_margin="10sp"
                     app:srcCompat="@drawable/cast"
-                    android:contentDescription="@string/todo9" />
+                    android:contentDescription="@string/todo9"
+                    tools:ignore="VectorDrawableCompat" />
 
                 <TextView
                     style="@style/text2"
@@ -203,7 +205,8 @@
                     android:layout_gravity="center"
                     android:layout_margin="10sp"
                     app:srcCompat="@drawable/color"
-                    android:contentDescription="@string/todo10" />
+                    android:contentDescription="@string/todo10"
+                    tools:ignore="VectorDrawableCompat" />
 
                 <TextView
                     style="@style/text2"
@@ -243,7 +246,8 @@
                     android:layout_gravity="center"
                     android:layout_margin="10sp"
                     app:srcCompat="@drawable/cookie"
-                    android:contentDescription="@string/todo11" />
+                    android:contentDescription="@string/todo11"
+                    tools:ignore="VectorDrawableCompat" />
 
                 <TextView
                     style="@style/text2"
@@ -282,7 +286,8 @@
                 android:id="@+id/purse"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="30sp"
