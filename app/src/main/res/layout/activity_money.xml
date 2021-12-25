@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Money">
+    tools:context=".MoneyActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout7"
@@ -105,105 +105,17 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout15"
         android:layout_marginHorizontal="20dp"/>
 
-    <LinearLayout
-        android:id="@+id/linearLayout16"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
         android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
-
-        <LinearLayout
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/ellipse_14"
-                tools:ignore="VectorDrawableCompat" />
-
-            <TextView
-                style="@style/text3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="@string/money5" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/ellipse_14"
-                tools:ignore="VectorDrawableCompat" />
-
-            <TextView
-                style="@style/text3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="@string/money6" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/ellipse_14"
-                tools:ignore="VectorDrawableCompat" />
-
-            <TextView
-                style="@style/text3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="@string/money7" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/ellipse_14"
-                tools:ignore="VectorDrawableCompat" />
-
-            <TextView
-                style="@style/text3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="@string/money8" />
-        </LinearLayout>
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_list2" />
 
     <LinearLayout
         android:layout_width="380dp"
@@ -211,7 +123,7 @@
         android:background="@drawable/rectangle_45"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout16">
+        app:layout_constraintTop_toBottomOf="@+id/recyclerview">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -264,102 +176,6 @@
         </LinearLayout>
     </LinearLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        app:layout_constraintBottom_toBottomOf="parent">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
-            <LinearLayout
-                android:id="@+id/purse"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="30sp"
-                    app:srcCompat="@drawable/premium_icon_wallet_2211048" />
-
-                <TextView
-                    style="@style/text3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/under1" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/catalog"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="30sp"
-                    app:srcCompat="@drawable/free_icon_copy_3914097" />
-
-                <TextView
-                    style="@style/text3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/under2" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/history"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="30sp"
-                    app:srcCompat="@drawable/history" />
-
-                <TextView
-                    style="@style/text3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/under3" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/cards">
-
-                <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="30sp"
-                    app:srcCompat="@drawable/credit_card" />
-
-                <TextView
-                    style="@style/text3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/under4" />
-            </LinearLayout>
-        </LinearLayout>
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
+    <include
+        layout="@layout/menu"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

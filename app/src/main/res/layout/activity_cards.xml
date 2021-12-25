@@ -5,6 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/textView"
+            style="@style/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30sp"
+            android:text="@string/cards_text_1"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:text="@string/cards_text_2" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:text="@string/cards_text_3" />
+    </com.google.android.material.tabs.TabLayout>
+
     <TextView
         android:id="@+id/textView2"
         style="@style/text1"
@@ -16,46 +57,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_marginRight="20dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        android:layout_marginEnd="20dp">
-
-        <TextView
-            style="@style/text3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/cards_text_2" />
-
-        <TextView
-            android:id="@+id/cards_of_other_banks"
-            style="@style/text3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="140sp"
-            android:text="@string/cards_text_3"
-            android:layout_marginStart="140sp" />
-
-
-    </LinearLayout>
-
-
-    <ImageView
-        android:id="@+id/line1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:srcCompat="@drawable/line_18"
-        android:layout_marginVertical="20dp"
-        android:contentDescription="@string/todo1" />
 
     <LinearLayout
         android:id="@+id/linearLayout4"
@@ -64,29 +65,28 @@
         android:layout_margin="30sp"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/line1"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
         tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="30sp"
             android:layout_height="30sp"
-            app:srcCompat="@drawable/credit_card"
-            android:contentDescription="@string/todo2" />
+            android:contentDescription="@string/todo2"
+            app:srcCompat="@drawable/credit_card" />
 
         <TextView
             style="@style/text3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginStart="30sp"
             android:layout_marginLeft="30sp"
-            android:text="@string/cards_text_4"
-            android:layout_marginStart="30sp" />
+            android:text="@string/cards_text_4" />
     </LinearLayout>
 
     <TextView
@@ -176,108 +176,6 @@
         android:background="@color/light_grey"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
 
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:id="@+id/purse"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                tools:ignore="UseCompoundDrawables">
-
-                <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="30sp"
-                    app:srcCompat="@drawable/premium_icon_wallet_2211048" />
-
-                <TextView
-                    style="@style/text3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/under1" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/catalog"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="30sp"
-                    app:srcCompat="@drawable/free_icon_copy_3914097" />
-
-                <TextView
-                    style="@style/text3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/under2" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/history"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="30sp"
-                    app:srcCompat="@drawable/history" />
-
-                <TextView
-                    style="@style/text3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/under3" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/cards"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="30sp"
-                    app:srcCompat="@drawable/credit_card" />
-
-                <TextView
-                    style="@style/text3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/under4" />
-            </LinearLayout>
-        </LinearLayout>
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
+    <include
+        layout="@layout/menu"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

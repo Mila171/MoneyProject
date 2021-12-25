@@ -10,22 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Money">
         <activity
-            android:name=".Card_second_page"
+            android:name=".CardTwoActivity"
             android:exported="true" />
         <activity
-            android:name=".Money"
+            android:name=".MoneyActivity"
             android:exported="true" />
         <activity
-            android:name=".Cards"
+            android:name=".CardsActivity"
             android:exported="true" />
         <activity
-            android:name=".History"
+            android:name=".HistoryActivity"
             android:exported="true" />
         <activity
-            android:name=".Catalog"
+            android:name=".CatalogActivity"
             android:exported="true" />
         <activity
-            android:name=".Profile"
+            android:name=".ProfileActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
